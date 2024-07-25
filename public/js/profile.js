@@ -32,7 +32,7 @@ const delButtonHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to delete project');
+      alert('Failed to delete post');
     }
   }
 };
@@ -57,7 +57,7 @@ const editButtonHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to edit project');
+        alert('Failed to edit post');
       }
     }
   }
@@ -68,9 +68,9 @@ document
   .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('.project-list')
+  .querySelector('.blog-list')
   .addEventListener('click', delButtonHandler);
 
 document
-  .querySelector('.project-list')
+  .querySelector('.blog-list')
   .addEventListener('click', editButtonHandler);
