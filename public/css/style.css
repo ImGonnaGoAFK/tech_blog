@@ -1,5 +1,6 @@
-header, .project:not(:last-child) {
+header, .project {
     border-bottom: 1px solid #ccc;
+    color: red;
   }
   
   .no-button {
@@ -17,9 +18,29 @@ header, .project:not(:last-child) {
     text-decoration: underline;
   }
   
-  .dollar-amount {
-    color: #056605;
+  nav {
+    padding: 10px 0;
+    z-index: 1;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
     font-weight: bold;
-    margin-left: -5px;
-  }
-  
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
